@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Question"
+            android:textColor="#00AA00"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <CheckBox
+            android:id="@+id/ckbOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="opption1"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/ckbOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="opption2"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/ckbOption3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="opption3"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/ckbOption4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="opption4"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:backgroundTint="@color/colorGreen"
+                android:text="Đáp án"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
